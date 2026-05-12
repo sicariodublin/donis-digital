@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bella Roma — Authentic Italian Restaurant Dublin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-text">Bella Roma</span>
+        <span class="logo-sub">RISTORANTE</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reservation">Reserve</a></li>
+        <li><a href="#info">Find Us</a></li>
+      </ul>
+      <a href="#reservation" class="nav-reserve">Reserve a Table</a>
+      <button class="nav-burger" id="burger" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#menu" onclick="closeMobile()">Menu</a></li>
+      <li><a href="#gallery" onclick="closeMobile()">Gallery</a></li>
+      <li><a href="#reservation" onclick="closeMobile()">Reserve</a></li>
+      <li><a href="#info" onclick="closeMobile()">Find Us</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Est. 1998 · Dublin, Ireland</p>
+      <h1>
+        <span class="hero-line1">Authentic Italian</span>
+        <span class="hero-line2">Cucina</span>
+      </h1>
+      <p class="hero-desc">Family recipes passed down through three generations,<br/>served with passion in the heart of Dublin.</p>
+      <div class="hero-ctas">
+        <a href="#reservation" class="btn-primary">Reserve a Table</a>
+        <a href="#menu" class="btn-outline">View Our Menu</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- INTRO STRIP -->
+  <div class="intro-strip">
+    <div class="strip-item">
+      <span class="strip-icon">🕐</span>
+      <div>
+        <strong>Open Daily</strong>
+        <span>12:00 – 22:30</span>
+      </div>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item">
+      <span class="strip-icon">📍</span>
+      <div>
+        <strong>Location</strong>
+        <span>14 Dame Street, Dublin 2</span>
+      </div>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item">
+      <span class="strip-icon">📞</span>
+      <div>
+        <strong>Reservations</strong>
+        <span>+353 1 234 5678</span>
+      </div>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item">
+      <span class="strip-icon">⭐</span>
+      <div>
+        <strong>4.9 / 5</strong>
+        <span>1,200+ reviews</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MENU -->
+  <section id="menu">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">La Cucina</p>
+        <h2>Our Menu</h2>
+        <p class="section-sub">All dishes are prepared fresh daily using imported Italian ingredients and traditional recipes.</p>
+      </div>
+
+      <div class="menu-tabs reveal">
+        <button class="tab-btn active" data-tab="starters">Starters</button>
+        <button class="tab-btn" data-tab="mains">Mains</button>
+        <button class="tab-btn" data-tab="desserts">Desserts</button>
+        <button class="tab-btn" data-tab="drinks">Drinks</button>
+      </div>
+
+      <!-- STARTERS -->
+      <div class="menu-panel active" id="tab-starters">
+        <div class="menu-grid">
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Bruschetta al Pomodoro</h3>
+              <span class="price">€8.50</span>
+            </div>
+            <p>Toasted sourdough with fresh vine tomatoes, garlic, basil, and extra virgin olive oil.</p>
+            <div class="menu-tags"><span class="tag veg">🌿 Vegetarian</span></div>
+          </div>
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Arancini di Riso</h3>
+              <span class="price">€10.00</span>
+            </div>
+            <p>Crispy Sicilian rice balls filled with ragù, mozzarella and peas, served with marinara sauce.</p>
+          </div>
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Carpaccio di Manzo</h3>
+              <span class="price">€13.50</span>
+            </div>
+            <p>Thinly sliced prime beef fillet, rocket, shaved Parmesan, capers, and lemon dressing.</p>
+          </div>
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Burrata con Prosciutto</h3>
+              <span class="price">€14.00</span>
+            </div>
+            <p>Creamy burrata from Puglia, aged Parma ham, cherry tomatoes, and truffle honey.</p>
+          </div>
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Zuppa di Cozze</h3>
+              <span class="price">€12.50</span>
+            </div>
+            <p>Fresh Irish mussels in white wine, garlic, chilli, and cherry tomato broth with grilled ciabatta.</p>
+          </div>
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Insalata Caprese</h3>
+              <span class="price">€11.00</span>
+            </div>
+            <p>Buffalo mozzarella, heritage tomatoes, fresh basil, and aged balsamic glaze.</p>
+            <div class="menu-tags"><span class="tag veg">🌿 Vegetarian</span><span class="tag gf">🌾 Gluten Free</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAINS -->
+      <div class="menu-panel" id="tab-mains">
+        <div class="menu-grid">
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Spaghetti Carbonara</h3>
+              <span class="price">€17.50</span>
+            </div>
+            <p>Egg yolk, Pecorino Romano, guanciale, and black pepper. No cream — the Roman way.</p>
+            <div class="menu-tags"><span class="tag popular">🔥 Most popular</span></div>
+          </div>
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Tagliatelle al Ragù</h3>
+              <span class="price">€18.00</span>
+            </div>
+            <p>Slow-cooked Bolognese with beef, pork, and veal, topped with aged Parmigiano Reggiano.</p>
+          </div>
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Risotto ai Funghi Porcini</h3>
+              <span class="price">€19.00</span>
+            </div>
+            <p>Carnaroli rice with wild porcini mushrooms, white wine, and truffle oil. Finished with butter and Parmesan.</p>
+            <div class="menu-tags"><span class="tag veg">🌿 Vegetarian</span></div>
+          </div>
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Branzino al Forno</h3>
+              <span class="price">€24.00</span>
+            </div>
+            <p>Whole oven-roasted sea bass with capers, olives, cherry tomatoes, white wine, and roasted potatoes.</p>
+            <div class="menu-tags"><span class="tag gf">🌾 Gluten Free</span></div>
+          </div>
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Osso Buco alla Milanese</h3>
+              <span class="price">€26.50</span>
+            </div>
+            <p>Braised veal shank in white wine and gremolata, served with saffron risotto and seasonal vegetables.</p>
+          </div>
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Pizza Margherita DOC</h3>
+              <span class="price">€15.00</span>
+            </div>
+            <p>San Marzano tomatoes, buffalo mozzarella, and fresh basil on our 48-hour fermented sourdough base.</p>
+            <div class="menu-tags"><span class="tag veg">🌿 Vegetarian</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DESSERTS -->
+      <div class="menu-panel" id="tab-desserts">
+        <div class="menu-grid">
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Tiramisù della Casa</h3>
+              <span class="price">€8.50</span>
+            </div>
+            <p>Our grandmother's recipe — mascarpone, espresso-soaked savoiardi, and dark cocoa dusting.</p>
+            <div class="menu-tags"><span class="tag popular">🔥 House special</span></div>
+          </div>
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Panna Cotta al Lampone</h3>
+              <span class="price">€7.50</span>
+            </div>
+            <p>Silky vanilla panna cotta with fresh raspberry coulis and crushed amaretti biscuits.</p>
+            <div class="menu-tags"><span class="tag gf">🌾 Gluten Free</span></div>
+          </div>
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Cannolo Siciliano</h3>
+              <span class="price">€7.00</span>
+            </div>
+            <p>Crispy pastry shell filled with sweetened ricotta, candied orange peel, and dark chocolate chips.</p>
+          </div>
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Gelato Artigianale</h3>
+              <span class="price">€6.50</span>
+            </div>
+            <p>Three scoops of our handmade gelato. Ask your server for today's flavours.</p>
+            <div class="menu-tags"><span class="tag veg">🌿 Vegetarian</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DRINKS -->
+      <div class="menu-panel" id="tab-drinks">
+        <div class="menu-grid">
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Aperol Spritz</h3>
+              <span class="price">€10.00</span>
+            </div>
+            <p>Aperol, Prosecco, and a splash of soda water over ice with a slice of orange.</p>
+          </div>
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Negroni</h3>
+              <span class="price">€11.50</span>
+            </div>
+            <p>Campari, sweet vermouth, and gin — the Italian classic, stirred and served over a large ice cube.</p>
+          </div>
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>Barolo DOCG</h3>
+              <span class="price">€12.00 / glass</span>
+            </div>
+            <p>The king of Italian reds. Full-bodied Nebbiolo from the Langhe hills of Piedmont.</p>
+          </div>
+          <div class="menu-item reveal">
+            <div class="menu-item-header">
+              <h3>San Pellegrino</h3>
+              <span class="price">€3.50</span>
+            </div>
+            <p>Sparkling or still. The Italian way to hydrate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">La Nostra Casa</p>
+        <h2>A Taste of Bella Roma</h2>
+      </div>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item gi-large reveal" style="background: linear-gradient(135deg,#3d1a00,#6b2f00)">
+        <div class="gallery-label">The dining room</div>
+        <div class="gallery-emoji">🕯️</div>
+      </div>
+      <div class="gallery-item reveal" style="background: linear-gradient(135deg,#1a0a00,#4a1800)">
+        <div class="gallery-label">Spaghetti Carbonara</div>
+        <div class="gallery-emoji">🍝</div>
+      </div>
+      <div class="gallery-item reveal" style="background: linear-gradient(135deg,#2d0a0a,#6b1a1a)">
+        <div class="gallery-label">Wood-fired pizza</div>
+        <div class="gallery-emoji">🍕</div>
+      </div>
+      <div class="gallery-item reveal" style="background: linear-gradient(135deg,#0a1a0a,#1a3d1a)">
+        <div class="gallery-label">Burrata & Prosciutto</div>
+        <div class="gallery-emoji">🧀</div>
+      </div>
+      <div class="gallery-item gi-large reveal" style="background: linear-gradient(135deg,#1a1200,#3d2d00)">
+        <div class="gallery-label">Tiramisù della casa</div>
+        <div class="gallery-emoji">☕</div>
+      </div>
+      <div class="gallery-item reveal" style="background: linear-gradient(135deg,#0a0a2d,#1a1a4a)">
+        <div class="gallery-label">Our wine cellar</div>
+        <div class="gallery-emoji">🍷</div>
+      </div>
+    </div>
+    <p class="gallery-note reveal">📸 Real photography coming soon — these placeholders represent each section of our space and menu.</p>
+  </section>
+
+  <!-- RESERVATION -->
+  <section id="reservation">
+    <div class="container">
+      <div class="reservation-grid">
+        <div class="res-left reveal">
+          <p class="section-eyebrow">Book Your Table</p>
+          <h2>Join Us for<br/><em>an Unforgettable Evening</em></h2>
+          <p class="res-desc">Whether it's a quiet dinner for two or a celebration with family, we'll make it memorable. Reservations recommended, especially on weekends.</p>
+          <div class="res-details">
+            <div class="res-detail-item">
+              <span class="res-icon">🕐</span>
+              <div>
+                <strong>Monday – Friday</strong>
+                <span>12:00 – 15:00 &amp; 17:30 – 22:30</span>
+              </div>
+            </div>
+            <div class="res-detail-item">
+              <span class="res-icon">🕐</span>
+              <div>
+                <strong>Saturday – Sunday</strong>
+                <span>12:00 – 23:00</span>
+              </div>
+            </div>
+            <div class="res-detail-item">
+              <span class="res-icon">📞</span>
+              <div>
+                <strong>Phone reservations</strong>
+                <span>+353 1 234 5678</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="res-right reveal">
+          <div class="res-form-card">
+            <h3>Make a Reservation</h3>
+            <div class="res-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label>First name</label>
+                  <input type="text" placeholder="Marco"/>
+                </div>
+                <div class="form-group">
+                  <label>Last name</label>
+                  <input type="text" placeholder="Rossi"/>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Date</label>
+                  <input type="date"/>
+                </div>
+                <div class="form-group">
+                  <label>Time</label>
+                  <select>
+                    <option>12:00</option><option>12:30</option>
+                    <option>13:00</option><option>13:30</option>
+                    <option>17:30</option><option>18:00</option>
+                    <option>18:30</option><option>19:00</option>
+                    <option selected>19:30</option><option>20:00</option>
+                    <option>20:30</option><option>21:00</option>
+                    <option>21:30</option><option>22:00</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Guests</label>
+                  <select>
+                    <option>1 guest</option>
+                    <option>2 guests</option>
+                    <option selected>3 guests</option>
+                    <option>4 guests</option>
+                    <option>5 guests</option>
+                    <option>6+ guests</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Phone</label>
+                  <input type="tel" placeholder="+353 87 ..."/>
+                </div>
+              </div>
+              <div class="form-group full">
+                <label>Special requests</label>
+                <textarea rows="3" placeholder="Allergies, special occasions, high chair needed..."></textarea>
+              </div>
+              <button class="btn-reserve" id="reserveBtn">Confirm Reservation</button>
+              <p class="form-note">We'll confirm your booking by phone within 2 hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO / FIND US -->
+  <section id="info">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Dove Siamo</p>
+        <h2>Find Us</h2>
+      </div>
+      <div class="info-grid">
+        <div class="info-card reveal">
+          <div class="info-icon">📍</div>
+          <h3>Address</h3>
+          <p>14 Dame Street<br/>Dublin 2, D02 HX67<br/>Ireland</p>
+        </div>
+        <div class="info-card reveal">
+          <div class="info-icon">🕐</div>
+          <h3>Opening Hours</h3>
+          <p>
+            Mon–Fri: 12:00–15:00 &amp; 17:30–22:30<br/>
+            Sat–Sun: 12:00–23:00<br/>
+            <em>Kitchen closes 30 min before closing</em>
+          </p>
+        </div>
+        <div class="info-card reveal">
+          <div class="info-icon">🚇</div>
+          <h3>Getting Here</h3>
+          <p>2 min walk from Dame Street Luas stop.<br/>Parking on South Great George's Street.<br/>Bus routes 16, 49, 54A nearby.</p>
+        </div>
+        <div class="info-card reveal">
+          <div class="info-icon">📞</div>
+          <h3>Contact</h3>
+          <p>
+            Phone: +353 1 234 5678<br/>
+            Email: ciao@bellaroma.ie<br/>
+            Instagram: @bellaromadublin
+          </p>
+        </div>
+      </div>
+      <div class="map-placeholder reveal">
+        <div class="map-inner">
+          <span class="map-pin">📍</span>
+          <p><strong>Bella Roma</strong><br/>14 Dame Street, Dublin 2</p>
+          <a href="https://maps.google.com" target="_blank" class="btn-outline" style="margin-top:1rem;display:inline-block">Open in Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-text">Bella Roma</span>
+        <span class="logo-sub">RISTORANTE</span>
+        <p>Authentic Italian cuisine in the heart of Dublin since 1998.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reservation">Reserve a Table</a></li>
+          <li><a href="#info">Find Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>14 Dame Street, Dublin 2</p>
+        <p>+353 1 234 5678</p>
+        <p>ciao@bellaroma.ie</p>
+        <div class="social-links">
+          <a href="#">📘</a>
+          <a href="#">📸</a>
+          <a href="#">🐦</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Bella Roma Ristorante. All rights reserved.</p>
+      <p class="footer-credit">Website by <a href="#">Donis Digital</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
